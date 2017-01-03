@@ -1,0 +1,23 @@
+&.touch {
+	.show-dropdown,
+	#terminal-scroll {
+		overflow-y: scroll !important;
+		-webkit-overflow-scrolling: auto;
+	}
+
+	::-webkit-scrollbar {
+		width: 2px;
+		height: 2px;
+		background: transparent;
+	}
+	::-webkit-scrollbar-thumb {
+		background: @main-color;
+	}
+
+	body {
+		.modal-scrollable {
+			position: fixed !important;
+		}
+	}
+
+}

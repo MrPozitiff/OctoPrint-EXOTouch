@@ -1,0 +1,85 @@
+/* Modal EXOTouch (settings modal) */
+#settings_plugin_EXOTouch {
+
+	div.disabled {
+		opacity: 0.4;
+		pointer-events: none;
+	}
+
+	legend {
+		label {
+			margin-top: 12px;
+
+			@media (max-width: 400px) {
+				float: none;
+				display: block;
+				margin: 0;
+			}
+		}
+	}
+
+	.track {
+		.close {
+			width: 25px;
+			height: 25px;
+			background: @main-color;
+			border: 1px solid @main-color-darker;
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			border-radius: 50%;
+			opacity: 1;
+
+			&:after {
+				.font-icon-reset();
+				content: "\f00d";
+				color: @main-color-text;
+				text-align: center;
+				display: block;
+				line-height: 25px;
+			}
+		}
+	}
+
+}
+
+/* Modal EXOTouch (not settings) */
+#EXOTouch_settings_dialog {
+
+	.btn-box {
+		display: block;
+		margin: 10px 0;
+		white-space: nowrap;
+	}
+
+	button {
+		border: 0 none;
+		.border-radius(0);
+	}
+
+	.label {
+		font-size: 14px;
+		padding: 9px;
+		margin-left: -10px;
+		display: inline-block;
+		top: 2px;
+		position: relative;
+		.border-radius(0);
+	}
+
+}
+
+/* Nabar */
+#navbar_plugin_EXOTouch {
+	float: right;
+
+	#navbar_EXOTouch_settings {
+		i:before {
+			content: "\f10b";
+			font-size: 28px;
+			position: relative;
+			top: 5px;
+			margin-top: -9px;
+		}
+	}
+}
