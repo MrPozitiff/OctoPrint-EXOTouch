@@ -49,7 +49,7 @@ setup(**setup_parameters)
 
 try:
 	import os
-	fileOut = "./octoprint_touchui/WHATSNEW.md"
+	fileOut = "./octoprint_EXOTouch/WHATSNEW.md"
 	fileIn = "./WHATSNEW.md"
 
 	if os.path.isfile(fileOut):

@@ -1,23 +1,23 @@
 # coding=utf-8
 from __future__ import absolute_import
 
-from .api import touchui_api
-from .customization import touchui_customization
+from .api import EXOTouch_api
+from .customization import EXOTouch_customization
 
 import octoprint.plugin
 import octoprint.settings
 import octoprint.util
 import os
 
-class touchui_core(	touchui_api,
-					touchui_customization,
+class EXOTouch_core(	EXOTouch_api,
+					EXOTouch_customization,
 					octoprint.plugin.SettingsPlugin,
 					octoprint.plugin.AssetPlugin,
 					octoprint.plugin.TemplatePlugin,
 					octoprint.plugin.StartupPlugin):
 
 	def __init__(self):
-		super(touchui_core, self).__init__()
+		super(EXOTouch_core, self).__init__()
 		self._whatsNewPath = os.path.dirname(__file__) + "/WHATSNEW.md"
 
 	def on_settings_load(self):
@@ -31,26 +31,26 @@ class touchui_core(	touchui_api,
 
 	def get_template_vars(self):
 		if os.path.isfile(self._customCssPath) and self._settings.get(["useCustomization"]):
-			return dict(cssPath="./plugin/touchui/static/css/touchui.custom.css")
+			return dict(cssPath="./plugin/EXOTouch/static/css/EXOTouch.custom.css")
 		else:
-			return dict(cssPath="./plugin/touchui/static/css/touchui.css")
+			return dict(cssPath="./plugin/EXOTouch/static/css/EXOTouch.css")
 
 	def get_assets(self):
 		return dict(
-			js=["js/touchui.libraries.js", "js/touchui.bundled.js", "js/touchui.bootstrap.js"]
+			js=["js/EXOTouch.libraries.js", "js/EXOTouch.bundled.js", "js/EXOTouch.bootstrap.js"]
 		)
 
 	def get_template_configs(self):
 		files = [
-			dict(type="generic", template="touchui_modal.jinja2", custom_bindings=True),
-			dict(type="settings", template="touchui_settings.jinja2", custom_bindings=True),
-			dict(type="navbar", template="touchui_menu_item.jinja2", custom_bindings=True),
-			dict(type="generic", template="touchui_load_css.jinja2", custom_bindings=False)
+			dict(type="generic", template="EXOTouch_modal.jinja2", custom_bindings=True),
+			dict(type="settings", template="EXOTouch_settings.jinja2", custom_bindings=True),
+			dict(type="navbar", template="EXOTouch_menu_item.jinja2", custom_bindings=True),
+			dict(type="generic", template="EXOTouch_load_css.jinja2", custom_bindings=False)
 		]
 
 		if self._settings.get(["automaticallyLoad"]):
 			files.append(
-				dict(type="generic", template="touchui_auto_load.jinja2", custom_bindings=False)
+				dict(type="generic", template="EXOTouch_auto_load.jinja2", custom_bindings=False)
 			)
 
 		return files
@@ -75,23 +75,23 @@ class touchui_core(	touchui_api,
 
 	def get_update_information(self):
 		return dict(
-			touchui=dict(
-				displayName="TouchUI",
+			EXOTouch=dict(
+				displayName="EXOTouch",
 				displayVersion=self._plugin_version,
 				type="github_release",
 				user="BillyBlaze",
-				repo="OctoPrint-TouchUI",
+				repo="OctoPrint-EXOTouch",
 				current=self._plugin_version,
-				pip="https://github.com/BillyBlaze/OctoPrint-TouchUI/archive/{target_version}.zip"
+				pip="https://github.com/BillyBlaze/OctoPrint-EXOTouch/archive/{target_version}.zip"
 			)
 		)
 
-__plugin_name__ = "TouchUI"
+__plugin_name__ = "EXOTouch"
 def __plugin_load__():
-	touchui = touchui_core()
+	EXOTouch = EXOTouch_core()
 
 	global __plugin_implementation__
-	__plugin_implementation__ = touchui
+	__plugin_implementation__ = EXOTouch
 
 	global __plugin_hooks__
 	__plugin_hooks__ = {

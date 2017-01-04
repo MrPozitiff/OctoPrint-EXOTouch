@@ -12,7 +12,7 @@ import os
 from octoprint.server.util.flask import restricted_access
 from octoprint.server import admin_permission, VERSION
 
-class touchui_api(octoprint.plugin.BlueprintPlugin):
+class EXOTouch_api(octoprint.plugin.BlueprintPlugin):
 	
 	def increase_upload_bodysize(self, current_max_body_sizes, *args, **kwargs):
 		return [("POST", r"/css", 1 * 1024 * 1024), ("GET", r"/css", 1 * 1024 * 1024)]

@@ -10,11 +10,11 @@ import hashlib
 import time
 import os
 
-class touchui_customization(object):
+class EXOTouch_customization(object):
 	def __init__(self):
-		self._customCssPath = os.path.dirname(__file__) + "/static/css/touchui.custom.css"
-		self._customLessPath = os.path.dirname(__file__) + "/static/less/touchui.bundled.less"
-		self._customHashPath = os.path.dirname(__file__) + "/static/css/hash.touchui"
+		self._customCssPath = os.path.dirname(__file__) + "/static/css/EXOTouch.custom.css"
+		self._customLessPath = os.path.dirname(__file__) + "/static/less/EXOTouch.bundled.less"
+		self._customHashPath = os.path.dirname(__file__) + "/static/css/hash.EXOTouch"
 		self._requireNewCSS = False
 		self._refreshCSS = False
 		self._refreshTime = 0

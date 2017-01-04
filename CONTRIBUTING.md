@@ -1,4 +1,4 @@
-# Contributing to TouchUI
+# Contributing to EXOTouch
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
@@ -6,19 +6,19 @@
 
 ### Reporting Bugs
 
-This section guides you through submitting a bug report for TouchUI. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
+This section guides you through submitting a bug report for EXOTouch. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
 
 Before creating bug reports, please check [this list](#before-submitting-a-bug-report) as you might find out that you don't need to create one. When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). If you'd like, you can use [this template](#template-for-submitting-bug-reports) to structure the information.
 
 #### OctoPrint and plugins
-Sometimes bugs can be related to a specific plugin or OctoPrint version. Since TouchUI extends the code base of OctoPrint, a bug can also exist in the default interface.
+Sometimes bugs can be related to a specific plugin or OctoPrint version. Since EXOTouch extends the code base of OctoPrint, a bug can also exist in the default interface.
 * Check if the bug also exists in the default interface. If yes, report this problem to [OctoPrint](https://github.com/foosel/OctoPrint).
-* Check if you have installed a plugin that interferes with TouchUI or your bug. If you do; try to disable it. If it has no effect, add this to your bug report.
+* Check if you have installed a plugin that interferes with EXOTouch or your bug. If you do; try to disable it. If it has no effect, add this to your bug report.
 
 #### Before Submitting A Bug Report
 
-* **Check the [Troubleshooting on the Wiki](https://github.com/BillyBlaze/OctoPrint-TouchUI/wiki/Setup:-Troubleshooting)** for a list of common questions and problems.
-* **Perform a [cursory search](https://github.com/BillyBlaze/OctoPrint-TouchUI/issues?utf8=%E2%9C%93&q=)** to see if the problem has already been reported. If it has, add a comment to the existing issue instead of opening a new one.
+* **Check the [Troubleshooting on the Wiki](https://github.com/BillyBlaze/OctoPrint-EXOTouch/wiki/Setup:-Troubleshooting)** for a list of common questions and problems.
+* **Perform a [cursory search](https://github.com/BillyBlaze/OctoPrint-EXOTouch/issues?utf8=%E2%9C%93&q=)** to see if the problem has already been reported. If it has, add a comment to the existing issue instead of opening a new one.
 
 #### How Do I Submit A (Good) Bug Report?
 
@@ -26,7 +26,7 @@ Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/).
 
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
-* **Which version of OctoPrint and TouchUI are you using**?
+* **Which version of OctoPrint and EXOTouch are you using**?
 * **What's the name and version of the Browser you're using**?
 * **Use a clear and descriptive title** for the issue to identify the problem.
 * **Describe the exact steps which reproduce the problem** in as many details as possible. Don't just say what you did, but explain how you did it. For example, if you moved the cursor to the end of a line, explain if you used the mouse, or a touch swipe.
@@ -69,7 +69,7 @@ Explain the problem and include additional details to help maintainers reproduce
 
 **Browser version:** [Enter Browser version here]
 **OctoPrint version:** [Enter OctoPrint version here]
-**TouchUI version:** [Enter TouchUI version here]
+**EXOTouch version:** [Enter EXOTouch version here]
 
 **Installed plugins:**
 1. [package 1]
@@ -78,7 +78,7 @@ Explain the problem and include additional details to help maintainers reproduce
 
 ### Your First Code Contribution
 
-Unsure where to begin contributing to TouchUI? You can start by looking through `help-wanted` issues:
+Unsure where to begin contributing to EXOTouch? You can start by looking through `help-wanted` issues:
 
 * [Help wanted issues][help-wanted] - issues which should be a bit more involved than `beginner` issues.
 

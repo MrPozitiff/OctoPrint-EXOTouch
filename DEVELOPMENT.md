@@ -5,9 +5,9 @@
   1. LESS compiles into a combined LESS file for the template of Customization.
   1. LESS compiles into a CSS file used if Customization is disabled.
   1. JS files is combined into one file:
-    - Core files is written to touchui.bundled.js
-    - Libraries is written to touchui.libraries.js
-    - Knockout is written to touchui.libraries.js
+    - Core files is written to EXOTouch.bundled.js
+    - Libraries is written to EXOTouch.libraries.js
+    - Knockout is written to EXOTouch.libraries.js
 
 
 ## Prerequisites
@@ -33,8 +33,8 @@ Run `gulp watch`
 
 - **LESS**  
 Run `gulp less`  
-This will concat all files in `source/less` to `touchui.bundled.less`
+This will concat all files in `source/less` to `EXOTouch.bundled.less`
 
 - **JS**  
 Run `gulp js`  
-This will concat all files in `source/js` to `touchui.bundled.js`/`touchui.libraries.js`/`touchui.knockout.js`
+This will concat all files in `source/js` to `EXOTouch.bundled.js`/`EXOTouch.libraries.js`/`EXOTouch.knockout.js`
