@@ -1,0 +1,17 @@
+a {
+	color: @main-color;
+
+	&:active {
+		color: @main-color-darker;
+	}
+	&.active {
+		background: @main-color;
+		color: @main-color-text;
+	}
+}
+li.active {
+	a {
+		background: @main-color;
+		color: @main-color-text;
+	}
+}

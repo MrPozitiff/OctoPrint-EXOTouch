@@ -1,0 +1,151 @@
+.visible_touch {
+	display: block;
+
+	&#login_dropdown_loggedin {
+		display: block !important;
+		position: static;
+		width: 100%;
+		border: 0 none;
+		margin: 0 !important;
+		right: auto !important;
+		padding: 0 !important;
+		float: none;
+	}
+}
+#navbar_login .hidden_touch {
+	display: none !important;
+}
+.hidden_touch {
+	display: none;
+}
+
+.accordion,
+#navbar .brand {
+	position: absolute;
+	top: -5000px;
+	left: -5000px;
+}
+
+.page-container {
+	width: 100%;
+
+	// &.no-pointer {
+	// 	:active {
+	// 		color: inherit !important;
+	// 		background: inherit !important;
+	// 	}
+	// }
+
+	.octoprint-container {
+		margin: 0;
+
+		* {
+			border: 0 none;
+			.border-radius(0) !important;
+		}
+
+		> .row {
+			margin-bottom: 40px;
+		}
+
+		.tab-content {
+			padding: @main-gutter @main-gutter 0;
+			overflow: visible;
+			.box-sizing(border-box);
+
+			h1 {
+				color: @text-color;
+				margin: 0;
+			}
+
+			table {
+				position: relative;
+				margin-left: -@main-gutter;
+				max-width: none;
+				width: 100vw;
+
+				tr {
+					&:first-child {
+						th {
+							margin: 0;
+							font-size: 18px;
+							border-bottom: 1px solid @main-background;
+							background: @table-row-header-background;
+							color: @table-row-header-text-color;
+							padding: 13px 5px;
+						}
+					}
+
+					td, th {
+						&:first-child {
+							padding-left: @main-gutter;
+						}
+						&:last-child {
+							padding-right: @main-gutter;
+						}
+					}
+
+					&:hover {
+						background-color: @table-row-background;
+						color: contrast(@table-row-background);
+					}
+
+					th, td {
+						border-bottom: 1px solid @main-background;
+						background-color: @table-row-background;
+						color: contrast(@table-row-background);
+					}
+				}
+			}
+
+		}
+
+		button, .btn {
+			transition: background-color 0.2s ease, color 0.2s ease;
+			background: @btn-main-background;
+			color: @btn-main-text;
+
+			&:active {
+				background: darken(@btn-main-background, 10%);
+				color: @btn-main-text;
+			}
+
+			&:focus {
+				outline: 0 none;
+			}
+
+			&.disabled, &[disabled] {
+				pointer-events: none;
+			}
+		}
+
+		.add-on {
+			background: @addon-background;
+			color: @addon-text-color;
+			border-left: 1px solid @main-background;
+		}
+
+	}
+}
+
+.control-group {
+	.control-label,
+	.controls {
+		display: block;
+		float: none;
+		width: 100%;
+		margin: 0;
+		text-align: left;
+	}
+
+}
+
+.tabbable,
+.container {
+	width: 100%;
+}
+
+.container > .row,
+.container > .row > .tabbable {
+	margin: 0;
+}

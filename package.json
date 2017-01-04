@@ -1,0 +1,28 @@
+{
+  "author": "",
+  "name": "OctoPrint-EXOTouch",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marianoronchi/OctoPrint-EXOTouch.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssimport": "^2.1.1",
+    "gulp-if": "^2.0.0",
+    "gulp-less": "^3.0.3",
+    "gulp-remove-empty-lines": "0.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-strip-comments": "^1.1.1",
+    "gulp-trimlines": "^1.0.0",
+    "gulp-uglify": "^1.5.3",
+    "through2": "^2.0.1"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

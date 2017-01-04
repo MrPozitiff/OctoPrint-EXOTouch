@@ -1,0 +1,28 @@
+.pagination {
+	color: transparent;
+
+	ul {
+		> li {
+
+			&.disabled,
+			&.active {
+				> a {
+					background: transparent;
+					color: @text-color;
+				}
+			}
+			> a {
+				padding: 10px 15px;
+				font-size: 21px;
+				background: @main-color;
+				color: @main-color-text;
+
+				&:active {
+					background: @main-color-darker;
+					color: @main-color-dark-text;
+				}
+			}
+
+		}
+	}
+}

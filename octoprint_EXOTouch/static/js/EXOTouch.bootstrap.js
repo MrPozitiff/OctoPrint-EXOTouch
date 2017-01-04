@@ -1,0 +1,1 @@
+!function(){var E=new EXOTouch;E.domLoading(),$(function(){E.domReady(),OCTOPRINT_VIEWMODELS.push([E.koStartup,E.EXOTouch_REQUIRED_VIEWMODELS,E.EXOTouch_ELEMENTS,E.EXOTouch_REQUIRED_VIEWMODELS])})}();
