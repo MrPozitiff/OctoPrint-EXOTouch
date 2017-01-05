@@ -9,7 +9,7 @@ import octoprint.settings
 import octoprint.util
 import os
 
-class EXOTouch_core(	EXOTouch_api,
+class EXOTouch_core( EXOTouch_api,
 					EXOTouch_customization,
 					octoprint.plugin.SettingsPlugin,
 					octoprint.plugin.AssetPlugin,
