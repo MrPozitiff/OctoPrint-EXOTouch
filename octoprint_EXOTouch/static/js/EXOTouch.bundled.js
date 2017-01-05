@@ -278,13 +278,13 @@ EXOTouch.prototype.components.keyboard = {
 			customLayout: {
 				'default': [
 					'q w e r t y u i o p',
-					'a s d f g h j k l',
+					'a s d f g h j k l ñ',
 					'{bksp} {s} z x c v b n m',
 					'{accept} {c} {left} {right} {meta1} {space}'
 				],
 				'shift': [
 					'Q W E R T Y U I O P',
-					'A S D F G H J K L',
+					'A S D F G H J K L Ñ',
 					'{bksp} {s} Z X C V B N M',
 					'{accept} {c} {left} {right} {meta1} {space}'
 				],

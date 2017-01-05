@@ -6,8 +6,8 @@ EXOTouch.prototype.DOM.move.controls = {
 		if($('#control-jog-feedrate').length === 0) {
 			var jogPanels = $('#control > .jog-panel');
 
-			$(jogPanels[0]).find(".jog-panel:nth-child(1)").attr("id", "control-jog-xy");
-			$(jogPanels[0]).find(".jog-panel:nth-child(2)").attr("id", "control-jog-z");
+			$(jogPanels[0]).find(".jog-panel:nth-child(1)").attr("id", "control-jog-z");
+			$(jogPanels[0]).find(".jog-panel:nth-child(2)").attr("id", "control-jog-xy");
 			$(jogPanels[1]).attr("id", "control-jog-extrusion");
 			$(jogPanels[2]).attr("id", "control-jog-general");
 
